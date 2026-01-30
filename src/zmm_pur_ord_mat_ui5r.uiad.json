@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Purchase Order Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zmmpurordmat"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_458FE40C3C77C4587D541D0CD375EC44E9ED9E56_TM",
+    "semanticObject": "zso_pur_ord_material",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_458FE40C3C77C4587D541D0CD375EC44E9ED9E56_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Order Print"
+      }
+    }
+  ]
+}

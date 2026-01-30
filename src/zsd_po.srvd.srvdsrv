@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZSD_PO'
+define service ZSD_PO {
+  expose ZI_DELIVERY_ADDR;
+}

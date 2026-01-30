@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for Purchase Order'
+define service ZUI_PO_SRV {
+  expose ZC_PO;
+}

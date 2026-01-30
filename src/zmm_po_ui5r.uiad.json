@@ -1,0 +1,35 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Purchase Order Print - Material Based"
+  },
+  "ui5AppDetails": {
+    "appId": "zmmpo"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_33710EAE38FF9CAA54E052B60E108D9A2E0672BA_TM",
+    "semanticObject": "ZMM_PO",
+    "action": "ZPREVIEW",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_33710EAE38FF9CAA54E052B60E108D9A2E0672BA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Order Print - Material Based",
+        "icon": "sap-icon://legend"
+      }
+    }
+  ]
+}

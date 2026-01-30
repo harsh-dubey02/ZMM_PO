@@ -1,0 +1,23 @@
+managed implementation in class zbp_i_po unique;
+strict ( 2 );
+
+define behavior for ZI_PO alias ZI_PO_doc
+//persistent table <???>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+
+
+{
+  action ( features : instance ) ZPRINT result [1] $self;
+  update;
+  field ( readonly ) PurchaseOrder;
+
+  mapping for ztb_mm_po_n
+    {
+      PurchaseOrder = PurchaseOrder;
+      base64        = base64;
+    }
+
+}

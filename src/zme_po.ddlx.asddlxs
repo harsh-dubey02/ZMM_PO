@@ -1,0 +1,65 @@
+@Metadata.layer: #CORE
+@UI:{
+    headerInfo:{
+    typeName: 'Purchase Order',
+    typeNamePlural: 'Purchase Order' },
+        presentationVariant: [{ sortOrder: [{ by: 'PurchaseOrder', direction: #ASC }] }]
+    }
+annotate entity ZC_PO
+    with 
+{
+    @UI.facet: [
+
+  {
+  id : 'Header',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'Purchase Order',
+  position: 10
+  }
+
+  ]
+
+  @UI: { lineItem:[{ position: 10 }, { type: #FOR_ACTION , dataAction: 'ZPRINT', label: 'Generate Print'}],
+  identification: [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+  PurchaseOrder;
+  @UI: { lineItem:[{ position: 20 }],
+  identification: [{ position: 20 }],
+  selectionField: [{ position: 20 }] }
+  CreationDate;
+  @UI: { lineItem:[{ position: 30 }],
+  identification: [{ position: 30 }],
+  selectionField: [{ position: 30 }] }
+  PaymentTerms;
+  @UI: { lineItem:[{ position: 40 }],
+  identification: [{ position: 40 }],
+  selectionField: [{ position: 40 }] }
+  SupplierQuotationExternalID;
+  @UI: { lineItem:[{ position: 50 }],
+  identification: [{ position: 50 }],
+  selectionField: [{ position: 50 }] }
+  PurchaseOrderDate;
+  @UI: { lineItem:[{ position: 60 }],
+  identification: [{ position: 60 }] }
+  IncotermsClassification;
+//  @UI: { lineItem:[{ position: 70 }],
+//  identification: [{ position: 70 }] }
+//  YY1_PortofDischarge_SDH;
+//  @UI: { lineItem:[{ position: 80 }],
+//  identification: [{ position: 80 }] }
+//  YY1_FinalDestination_SDH;
+//  @UI: { lineItem:[{ position: 90 }],
+//  identification: [{ position: 90 }] }
+//  CustomerPaymentTerms;
+//  @UI: { lineItem:[{ position: 100 }],
+//  identification: [{ position: 100 }] }
+//  IncotermsClassification;
+//  @UI: { lineItem:[{ position: 110 }],
+//  identification: [{ position: 110 }] }
+//  YY1_TypeofShipment_SDH;
+  @UI.hidden: true
+  base64;
+    
+    
+}
